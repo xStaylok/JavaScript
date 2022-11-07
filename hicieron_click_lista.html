@@ -1,0 +1,17 @@
+<ul>
+    <li>Haz clic en A</li>
+    <li>Haz clic en B</li>
+    <li>Haz clic en C</li>
+</ul>
+<script>
+
+    var lista = document.querySelectorAll('li');
+
+    for(var i = 0; i < lista.length; i++) {
+
+        lista[i].addEventListener('click', function() {
+
+            alert(this.textContent);
+        });
+    }
+</script>
